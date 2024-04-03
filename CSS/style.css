@@ -1,14 +1,140 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* navbar style  */
+.navbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 50px 0 100px;
+    background: linear-gradient(145deg, #1f1f1f, #121212);
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.navbar .logo {
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 4;
 }
 
-li {
-    list-style: none;
+.navbar .logo img {
+    width: 60px;
+}
+
+.navbar .links {
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    z-index: 3;
+    width: 90%;
+}
+
+.navbar .links li {
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.navbar .links .link-page {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .links .link-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.navbar ul.links li:hover {
+    background: #fff1;
+}
+
+
+.navbar .menu {
+    position: absolute;
+    right: 40px;
+    color: white;
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+
+
+
+/* .main-container */
+.main-container {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+
+
+
+/* sidebar */
+
+.sidebar {
+    width: 200px;
+    padding: 30px;
+    background: linear-gradient(145deg, #1f1f1f, #121212);
+    height: 100%;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar ul li a {
+    padding: 10px;
+    border-bottom: 1px solid #0000;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    display: block;
+}
+
+.sidebar ul li:hover a {
+    background: #fff1;
+}
+
+
+/* main  */
+main {
+    width: calc(100vw - 200px);
+    padding: 30px;
+    background: linear-gradient(145deg, #1f1f1f, #121212);
+    height: 100%;
+    overflow-y: scroll;
+    color: #f0f0f0;
+}
+
+main::-webkit-scrollbar {
+    width: 5px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+/* Customize scrollbar thumb on hover */
+main::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+
+
+/* footer */
+.footer {
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
 }
