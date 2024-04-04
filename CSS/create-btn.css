@@ -1,6 +1,7 @@
 .create-btn {
     position: relative;
-    padding: 8px 25px;
+    width: 120px;
+    height: 40px;
     background: #fec195;
     font-size: 17px;
     font-weight: 500;
@@ -10,6 +11,7 @@
     box-shadow: 0 0 0 #fec1958c;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+
 }
 
 .create-btn div {
@@ -17,6 +19,7 @@
     filter: drop-shadow(0 0 0 #fffdef);
     z-index: -5;
     color: #fffdef;
+
 }
 
 .create-btn .star-1 {
