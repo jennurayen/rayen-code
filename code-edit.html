@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./CSS/responsive.css">
 
     <link rel="stylesheet" href="CSS/create-btn.css">
+    <link rel="stylesheet" href="CSS/code-edit.css">
 </head>
 
 <body>
@@ -31,12 +32,9 @@
                 <li><a href="#">
                         <i class="fa-brands fa-fulcrum"></i>
                         Components</a></li>
-                <li><a href="code-edit.html">
+                <li><a href="#">
                         <i class="fa-solid fa-desktop"></i>
-                        Code</a></li>
-                <!-- <li><a href="#">
-                        <i class="fa-solid fa-desktop"></i>
-                        Full Page</a></li> -->
+                        Full Page</a></li>
 
                 <li><a target="_blank" href="https://www.youtube.com/@rayen-code">
                         <i class="fa-brands fa-youtube"></i>
@@ -95,63 +93,23 @@
         </aside>
         <main>
             <div class="container">
-                <div class="card-container">
-
-                    <!-- card start  -->
-                    <div class="card">
-                        <div class="card-outpur">
-                            <img src="image/thum.jpg" alt="">
-                        </div>
-                        <div class="card-opt">
-                            <div class="post-by">admin</div>
-                            <div class="get-code"><i class="fa-solid fa-code"></i> Code</div>
+                <div class="editor-container">
+                    <div class="output">
+                        <iframe id="iframe-output" class="iframe-output"></iframe>
+                    </div>
+                    <div class="code-area">
+                        <div class="code-header"><i class="fa-solid fa-user"></i> admin</div>
+                        <div class="code-editor">
+                            <div class="code-language">
+                                <button class="code-html"><i class="fa-brands fa-html5"></i> HTML</button>
+                                <button class="code-css"><i class="fa-brands fa-css3-alt"></i> CSS</button>
+                                <button class="code-js"><i class="fa-brands fa-js"></i> JAVA SCRIPT</button>
+                            </div>
+                            <textarea id="code-editor" class="code-editor">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, obcaecati inventore eos unde dolore nesciunt, laudantium fuga sed porro nisi et, sunt assumenda fugit repellat odio culpa ea. Accusamus, facilis.
+                            </textarea>
                         </div>
                     </div>
-                    <!-- card end  -->
-                    <!-- card start  -->
-                    <div class="card">
-                        <div class="card-outpur">
-                            <img src="image/thum.jpg" alt="">
-                        </div>
-                        <div class="card-opt">
-                            <div class="post-by">admin</div>
-                            <div class="get-code"><i class="fa-solid fa-code"></i> Code</div>
-                        </div>
-                    </div>
-                    <!-- card end  -->
-                    <!-- card start  -->
-                    <div class="card">
-                        <div class="card-outpur">
-                            <img src="image/thum.jpg" alt="">
-                        </div>
-                        <div class="card-opt">
-                            <div class="post-by">admin</div>
-                            <div class="get-code"><i class="fa-solid fa-code"></i> Code</div>
-                        </div>
-                    </div>
-                    <!-- card end  -->
-                    <!-- card start  -->
-                    <div class="card">
-                        <div class="card-outpur">
-                            <img src="image/thum.jpg" alt="">
-                        </div>
-                        <div class="card-opt">
-                            <div class="post-by">admin</div>
-                            <div class="get-code"><i class="fa-solid fa-code"></i> Code</div>
-                        </div>
-                    </div>
-                    <!-- card end  -->
-                    <!-- card start  -->
-                    <div class="card">
-                        <div class="card-outpur">
-                            <img src="image/thum.jpg" alt="">
-                        </div>
-                        <div class="card-opt">
-                            <div class="post-by">admin</div>
-                            <div class="get-code"><i class="fa-solid fa-code"></i> Code</div>
-                        </div>
-                    </div>
-                    <!-- card end  -->
                 </div>
             </div>
         </main>
