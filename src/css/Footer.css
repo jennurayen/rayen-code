@@ -1,0 +1,8 @@
+/* footer */
+.footer {
+    color: aliceblue;
+    background: rgb(39, 39, 39);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid white;
+}

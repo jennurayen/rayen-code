@@ -1,0 +1,128 @@
+/* ************************* */
+.editor-container {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid rgb(61, 61, 61);
+}
+
+.editor-container .user-details span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.editor-container .user-details {
+    font-size: .8rem;
+    font-family: monospace;
+}
+
+.editor-container .output {
+    height: 50vh;
+}
+
+
+.editor-container .code-area {
+    width: 100%;
+    /* height: 330px; */
+    background: #313131;
+    border-radius: 15px;
+}
+
+/* ********************** */
+.tab-button-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap-reverse;
+}
+
+.tab-button-container>div {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap-reverse;
+}
+
+.tab-button-container .select-category {
+    margin-left: 80px;
+}
+
+.tab-button-container .tabBtn {
+    background: #121212;
+    color: white;
+    height: 30px;
+    padding: 0 15px;
+    outline: none;
+    border: 0;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.tab-button-container .submit-btn {
+    padding: 10px;
+    border: 1px solid #e6bb00;
+    border-radius: 5px;
+    background: #121212;
+    color: #e6bb00;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab-button-container .submit-btn i.save {
+    color: greenyellow;
+}
+
+.tab-button-container .submit-btn i.unsave {
+    color: red;
+}
+
+.tab-button-container .btn-not-allow {
+    color: gray;
+    border-color: red;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.tab-button-container .btn-not-allow:hover::before {
+    position: absolute;
+    content: 'Select A Category';
+    width: 120px;
+    padding: 10px;
+    background: #f5cc18;
+    color: black;
+    right: 10px;
+    top: -120%;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.tab-button-container .btn-not-allow:hover::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #f5cc18;
+    right: 20px;
+    top: -50%;
+    rotate: 45deg;
+    z-index: 9;
+}
+
+.tab-button-container .saveneed i {
+    color: red;
+}
+
+/* ************************** */
+
+
+
+.editor-container .editor-three {
+    width: 100%;
+    /* height: 60vh; */
+}

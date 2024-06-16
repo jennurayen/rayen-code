@@ -1,0 +1,25 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff1;
+    align-items: center;
+}
+
+.pagination .page-btn {
+    color: white;
+    background: rgb(56, 56, 56);
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.pagination .page-btn:hover {
+    border: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+.pagination .page-btn:active {
+    background: rgb(20, 20, 20);
+}
